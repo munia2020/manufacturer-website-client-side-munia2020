@@ -1,0 +1,20 @@
+.talks-container {
+  margin-top: 6em;
+  background: #92a1ef;
+  background: -webkit-linear-gradient(top left, #92a1ef, #0b8ddd);
+  background: -moz-linear-gradient(top left, #92a1ef, #0b8ddd);
+  background: linear-gradient(to bottom right, #92a1ef, #0b8ddd);
+}
+
+.talks-text {
+  width: 40%;
+  text-align: center;
+  padding: 3em;
+  margin: 0 auto;
+}
+.talks-text h3 {
+  color: white;
+}
+.talks-text p {
+  color: white;
+}

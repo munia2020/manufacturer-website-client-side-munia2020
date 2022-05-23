@@ -1,0 +1,16 @@
+.reviews-container{
+    width: 75%;
+    margin: 3em auto;
+    text-align: center;
+}
+
+.reviews-container h2 {
+    color: #0d6efd;
+}
+
+.all-reviews{
+    margin: 3em 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5em;
+}

@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Martha",
+        "review": "I like their pruducts and service compared to other company. customer support is very easy to reach and professional. Highly Recommended",
+        "rating": 5,
+        "img": "https://images.unsplash.com/photo-1581094368940-5a08c24fd0a7?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687"
+    },
+    {
+        "name": "Beth",
+        "review": "I like their pruducts and service compared to other company. customer support is very easy to reach and professional. Highly Recommended",
+        "rating": 5,
+        "img": "https://images.unsplash.com/photo-1621905252472-943afaa20e20?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688"
+    },
+    {
+        "name": "Henry",
+        "review": "I like their pruducts and service compared to other company. customer support is very easy to reach and professional. Highly Recommended",
+        "rating": 5,
+        "img": "https://images.unsplash.com/photo-1570470836811-78ef04bb23d3?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687"
+    }
+    
+]

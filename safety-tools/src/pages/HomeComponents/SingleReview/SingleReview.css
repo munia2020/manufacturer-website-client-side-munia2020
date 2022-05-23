@@ -1,0 +1,23 @@
+.single-review-container{
+    text-align: justify;
+}
+
+.single-review-container h5, p{
+    color: navy;
+}
+.single-review-container small{
+    color: cadetblue;
+}
+
+
+.single-review-container span{
+    color: tomato;
+}
+
+
+.review-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid skyblue;
+}

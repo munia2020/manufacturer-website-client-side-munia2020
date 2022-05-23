@@ -1,3 +1,7 @@
 .banner {
     height: 80vh;
 }
+
+.banner p {
+    color: whitesmoke;
+}

@@ -33,7 +33,7 @@ const BusinessSummary = () => {
         </div>
         <div className="summary">
           <h1>
-            <i className="summary-icon" class="bi bi-hand-thumbs-up"></i>
+            <i className="summary-icon bi-hand-thumbs-up"></i>
           </h1>
           <h5>33k+</h5>
           <p>Review</p>

@@ -6,7 +6,7 @@ const Loading = () => {
   return (
     <div className="loading">
       <Spinner animation="border" variant="success" />
-      <h1 style={{ color: "green" }}>Loading...</h1>
+      <h1 style={{ color: "blue" }}>Loading...</h1>
       {/* <Button variant="success" disabled>
         <Spinner
           as="span"

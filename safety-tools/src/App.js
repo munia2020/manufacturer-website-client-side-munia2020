@@ -12,12 +12,11 @@ import MyOrders from "./pages/Dashboard/MyOrders/MyOrders";
 import AddReview from "./pages/Dashboard/AddReview/AddReview";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
 import Blogs from "./pages/Blogs/Blogs";
-import Dashboard from "./pages/Dashboard/Dashboard/Dashboard";
+// import ToolDetail from "./pages/HomeComponents/ToolDetail/ToolDetail";
 
 function App() {
   return (
     <div>
-      {/* element={<RequireAuth><Dashboard></Dashboard></RequireAuth>} */}
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
@@ -27,11 +26,41 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/dashboard">
-          <Route path="orders" element={<RequireAuth><MyOrders></MyOrders></RequireAuth>}></Route>
-          <Route path="reviews" element={<RequireAuth><AddReview></AddReview></RequireAuth>}></Route>
-          <Route path="profile" element={<RequireAuth><MyProfile></MyProfile></RequireAuth>}></Route>
+          <Route
+            path="orders"
+            element={
+              <RequireAuth>
+                <MyOrders></MyOrders>
+              </RequireAuth>
+            }
+          ></Route>
+          <Route
+            path="reviews"
+            element={
+              <RequireAuth>
+                <AddReview></AddReview>
+              </RequireAuth>
+            }
+          ></Route>
+          <Route
+            path="profile"
+            element={
+              <RequireAuth>
+                <MyProfile></MyProfile>
+              </RequireAuth>
+            }
+          ></Route>
         </Route>
       </Routes>
+      <Route path="/tools/:id" ></Route>
+      {/* <Route
+        path="/tools/:id"
+        element={
+          <RequireAuth>
+            <ToolDetail></ToolDetail>
+          </RequireAuth>
+        }
+      ></Route> */}
       <ToastContainer />
     </div>
   );

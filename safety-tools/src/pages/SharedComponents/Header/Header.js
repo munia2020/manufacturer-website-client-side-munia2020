@@ -34,6 +34,10 @@ const Header = () => {
                 Add A Review
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/dashboard/profile">My Profile</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/dashboard/manageallorders">Manage All Orders</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/dashboard/addaproduct">Add A Product</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/dashboard/makeadmin">Make Admin</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/dashboard/manageproducts">Manage Products</NavDropdown.Item>
             </NavDropdown>
               
             )}

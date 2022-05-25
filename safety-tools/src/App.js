@@ -13,6 +13,11 @@ import AddReview from "./pages/Dashboard/AddReview/AddReview";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
 import Blogs from "./pages/Blogs/Blogs";
 import ToolDetail from "./pages/HomeComponents/ToolDetail/ToolDetail";
+import ManageAllOrders from "./pages/Dashboard/ManageAllOrders/ManageAllOrders";
+import AddAProduct from "./pages/Dashboard/AddAProduct/AddAProduct";
+import MakeAdmin from "./pages/Dashboard/MakeAdmin/MakeAdmin";
+import ManageProducts from "./pages/Dashboard/ManageProducts/ManageProducts";
+import MyPortfolio from "./pages/MyPortfolio/MyPortfolio";
 
 function App() {
   return (
@@ -23,6 +28,7 @@ function App() {
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+        <Route path="/portfolio" element={<MyPortfolio></MyPortfolio>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/dashboard">
@@ -47,6 +53,38 @@ function App() {
             element={
               <RequireAuth>
                 <MyProfile></MyProfile>
+              </RequireAuth>
+            }
+          ></Route>
+          <Route
+            path="manageallorders"
+            element={
+              <RequireAuth>
+                <ManageAllOrders></ManageAllOrders>
+              </RequireAuth>
+            }
+          ></Route>
+          <Route
+            path="addaproduct"
+            element={
+              <RequireAuth>
+                <AddAProduct></AddAProduct>
+              </RequireAuth>
+            }
+          ></Route>
+          <Route
+            path="makeadmin"
+            element={
+              <RequireAuth>
+                <MakeAdmin></MakeAdmin>
+              </RequireAuth>
+            }
+          ></Route>
+          <Route
+            path="manageproducts"
+            element={
+              <RequireAuth>
+                <ManageProducts></ManageProducts>
               </RequireAuth>
             }
           ></Route>

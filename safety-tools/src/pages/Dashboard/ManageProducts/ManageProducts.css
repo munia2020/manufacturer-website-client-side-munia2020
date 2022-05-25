@@ -1,0 +1,42 @@
+.manage-inventories {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .manage-inventories h1 {
+    padding-top: 1em;
+    color: #0d6efd;
+  }
+  
+  .manage-inventories-container {
+    margin: 2em 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em;
+  }
+  
+  .manage-single-card {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    .manage-inventories {
+      background-color: white;
+      margin: 2em auto;
+    }
+    .manage-inventories-container {
+      margin: 2em 0;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 4em;
+    }
+  }
+  

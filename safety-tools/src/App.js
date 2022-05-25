@@ -12,7 +12,7 @@ import MyOrders from "./pages/Dashboard/MyOrders/MyOrders";
 import AddReview from "./pages/Dashboard/AddReview/AddReview";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
 import Blogs from "./pages/Blogs/Blogs";
-// import ToolDetail from "./pages/HomeComponents/ToolDetail/ToolDetail";
+import ToolDetail from "./pages/HomeComponents/ToolDetail/ToolDetail";
 
 function App() {
   return (
@@ -51,16 +51,8 @@ function App() {
             }
           ></Route>
         </Route>
+        <Route path="/tools/:id" element={<RequireAuth><ToolDetail></ToolDetail></RequireAuth>}></Route>
       </Routes>
-      <Route path="/tools/:id" ></Route>
-      {/* <Route
-        path="/tools/:id"
-        element={
-          <RequireAuth>
-            <ToolDetail></ToolDetail>
-          </RequireAuth>
-        }
-      ></Route> */}
       <ToastContainer />
     </div>
   );

@@ -78,6 +78,7 @@ function App() {
               <RequireAuth>
                 <MakeAdmin></MakeAdmin>
               </RequireAuth>
+              // <RequireAdmin><MakeAdmin></MakeAdmin></RequireAdmin>
             }
           ></Route>
           <Route

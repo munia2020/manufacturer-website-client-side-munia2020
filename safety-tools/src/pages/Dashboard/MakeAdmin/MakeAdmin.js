@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import './MakeAdmin.css';
 
 const MakeAdmin = () => {
   const { register, handleSubmit, watch, errors } = useForm();
@@ -30,7 +31,7 @@ const MakeAdmin = () => {
         <input
           className="submit-btn btn btn-danger mt-3"
           type="submit"
-          value="make as Admin"
+          value="Make Admin"
         />
       </form>
     </div>

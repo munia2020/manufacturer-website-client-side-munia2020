@@ -7,7 +7,7 @@ const AddReview = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/reviews`;
+        const url = `https://nameless-depths-31123.herokuapp.com/reviews`;
         fetch(url, {
             method: 'POST',
             headers: {

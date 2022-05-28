@@ -10,7 +10,7 @@ const MyOrders = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/purchase?user=${user.email}`, {
+      fetch(`https://nameless-depths-31123.herokuapp.com/purchase?user=${user.email}`, {
         method: "GET",
         headers: {
           authorization: `Bearer ${localStorage.getItem("accessToken")}`,
@@ -25,7 +25,7 @@ const MyOrders = () => {
     const proceed = window.confirm("Do you really want to delete?");
     if (proceed) {
       console.log("deleting , ", id);
-      const url = `http://localhost:5000/purchase/${id}`;
+      const url = `https://nameless-depths-31123.herokuapp.com/purchase/${id}`;
       fetch(url, {
         method: "DELETE",
       })

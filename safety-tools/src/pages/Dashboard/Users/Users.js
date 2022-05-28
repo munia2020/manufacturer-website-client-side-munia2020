@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const Users = () => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/users`)
+    fetch(`https://nameless-depths-31123.herokuapp.com/users`)
       .then((res) => res.json())
       .then((data) => setUsers(data));
   }, []);

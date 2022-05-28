@@ -10,7 +10,7 @@ const ToolDetail = () => {
     const [tool, setTool] = useState({});
     console.log(tool);
     useEffect(()=>{
-        const url = `http://localhost:5000/tools/${id}`;
+        const url = `https://nameless-depths-31123.herokuapp.com/tools/${id}`;
         fetch(url)
         .then(res=>res.json())
         .then(data=>setTool(data));
@@ -18,7 +18,7 @@ const ToolDetail = () => {
 
     // * ui can be updated by this way (uzzal vai)
   const updateUi = () => {
-    const url = `http://localhost:5000/tools/${id}`;
+    const url = `https://nameless-depths-31123.herokuapp.com/tools/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setTool(data));
@@ -33,7 +33,7 @@ const ToolDetail = () => {
     const updatedUser = {avaQuantity};
     console.log(updatedUser);
 
-    const url = `http://localhost:5000/tools/${id}`;
+    const url = `https://nameless-depths-31123.herokuapp.com/tools/${id}`;
     fetch(url, {
         method: 'PUT',
         headers: {
@@ -66,7 +66,7 @@ const ToolDetail = () => {
         }
         console.log(purchase)
 
-        fetch('http://localhost:5000/purchase', {
+        fetch('https://nameless-depths-31123.herokuapp.com/purchase', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -5,7 +5,7 @@ import './ManageProducts.css';
 const ManageProducts = () => {
     const [tools, setTools] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/tools")
+    fetch("https://nameless-depths-31123.herokuapp.com/tools")
       .then((res) => res.json())
       .then((data) => setTools(data));
   }, []);
@@ -14,7 +14,7 @@ const ManageProducts = () => {
     const proceed = window.confirm("Do you really want to delete?");
     if (proceed) {
       console.log("deleting , ", id);
-      const url = `http://localhost:5000/tools/${id}`;
+      const url = `https://nameless-depths-31123.herokuapp.com/tools/${id}`;
       fetch(url, {
         method: "DELETE",
       })

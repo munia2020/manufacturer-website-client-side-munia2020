@@ -97,13 +97,13 @@ const ToolDetail = () => {
         <p>Available Quantity: {tool.avaQuantity} units</p>
         <div className="purchase">
             <h4>Purchase</h4>
-            
-            <form onSubmit={handleOrderQuantity}>
+            <p>To purchase, Kindly Place an order</p>
+            <form onSubmit={handleOrderQuantity} className="order-form">
             <input  type="number" name="quantity" placeholder="quantity" min="2" max={tool.avaQuantity} required />
             <input  type="submit" value="Order Quantity" />
           </form>
           <h4>user details</h4>
-          <form onSubmit={handlePurchase}>
+          <form onSubmit={handlePurchase} className="order-form">
             <input type="text" name="name" disabled value={user?.displayName || ''} /><br />
             <input type="email" name="email" disabled value={user?.email || ''} /><br />
             <input type="text" name="phone" placeholder="Phone Number" /><br />

@@ -2,6 +2,7 @@
     background-color: #f8f8f8;
     display: flex;
     justify-content: space-between;
+    text-transform: uppercase;
 }
 
 .detail-img-div{
@@ -25,9 +26,26 @@
     color: #0d6efd;
 }
 
+.purchase{
+    background-color: rgb(225, 239, 248);
+    margin-top: 2em;
+    padding: 1em;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;;
+    width: 50%;
+}
+
+.purchase h4{
+   color: #00008B;
+}
+
+.order-form{
+    width: 100%;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .detail-container{
+        width: 100%;
         flex-direction: column;
         align-items: center;
         padding: 2em .5em;
@@ -40,8 +58,13 @@
         height: 50vh;
         object-fit: cover;
     }
-    .detail-img-text{
-        width: 100%;
-        text-align: justify;
+    .detail-text{
+        width: 98%;
+        text-align: center;
+
+    }
+
+    .purchase{
+        width: 99%;
     }
 }

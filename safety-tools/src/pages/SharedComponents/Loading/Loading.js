@@ -5,7 +5,8 @@ import './Loading.css';
 const Loading = () => {
   return (
     <div className="loading">
-      <Spinner animation="border" variant="success" />
+      <Spinner animation="border" variant="primary" />
+      <br />
       <h1 style={{ color: "blue" }}>Loading...</h1>
       {/* <Button variant="success" disabled>
         <Spinner

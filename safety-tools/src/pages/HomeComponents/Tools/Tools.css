@@ -1,14 +1,28 @@
-.tools-container{
-    width: 75%;
-    margin: 4em auto;
+.tools-container {
+  width: 75%;
+  margin: 4em auto;
 }
-.tools-container h3{
-    text-transform: uppercase;
-    color: #0d6efd;
-    text-align: center;
-    margin-bottom: 1em;
+.tools-container h3 {
+  text-transform: uppercase;
+  color: #0d6efd;
+  text-align: center;
+  margin-bottom: 1em;
 }
 .three-tools {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .tools-container {
+    width: 100%;
+  }
+
+  .three-tools {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

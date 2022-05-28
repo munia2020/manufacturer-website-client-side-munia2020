@@ -2,13 +2,9 @@ import React, { useState } from "react";
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../../firebase.init";
+import useToken from "../../../hooks/useToken";
 import Loading from "../../SharedComponents/Loading/Loading";
 import SocialLogin from "../SocialLogin/SocialLogin";
-// import { useCreateUserWithEmailAndPassword, useUpdateProfile } from "react-firebase-hooks/auth";
-// import { Link, useNavigate } from "react-router-dom";
-// import auth from "../../../../firebase.init";
-// import Loading from "../../../SharedComponents/Loading/Loading";
-// import SocialLogin from "../SocialLogin/SocialLogin";
 import "./Register.css";
 
 const Register = () => {
@@ -17,6 +13,8 @@ const Register = () => {
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
+  const [token]  = useToken(user);
+  
   const navigate = useNavigate();
 
   const navigateLogin = () => {
@@ -46,7 +44,7 @@ const Register = () => {
   return (
     <div className="register-form">
       <h2 style={{ textAlign: "left" }}>
-        New to Organic Zone? <br /> Please Register ...
+        New to Safety Tools? <br /> Please Register ...
       </h2>
       <form onSubmit={handleRegister} className="form">
         <input type="text" name="name" id="" placeholder="Your Name" />
@@ -81,7 +79,7 @@ const Register = () => {
         <br />
         <br />
         <input
-          style={{ backgroundColor: "#78bc16" }}
+          style={{ backgroundColor: "#0d6efd" }}
           disabled={!agree}
           className="input-btn"
           type="submit"

@@ -18,3 +18,10 @@
 .talks-text p {
   color: white;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .talks-text {
+    width: 100%;
+  }
+}

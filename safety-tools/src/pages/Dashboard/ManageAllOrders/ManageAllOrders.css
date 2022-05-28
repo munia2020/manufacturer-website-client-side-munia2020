@@ -1,0 +1,18 @@
+.manage-all-orders{
+    width: 75%;
+    margin: 4em auto;
+    padding: 2em;
+    background-color: white;
+    text-align: center;
+}
+
+.manage-all-orders h2 {
+    color: #0d6efd;
+    margin-bottom: 2em;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .manage-all-orders{
+        width: 100%;
+    }
+}

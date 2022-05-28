@@ -83,16 +83,16 @@ const Login = () => {
       </Form>
       {errorElement}
       <p>
-        New to Organic Zone?{" "}
+        New to Safety Tools?{" "}
         <Link to="/register" className="to-register" onClick={navigateRegister}>
           Please Register
         </Link>{" "}
       </p>
       <p>
         Forget Password?
-        <button className="forget-btn" onClick={resetPassword}>
+        <Button className="forget-btn" onClick={resetPassword}>
           Reset Password
-        </button>{" "}
+        </Button>{" "}
       </p>
       <SocialLogin></SocialLogin>
       <ToastContainer />

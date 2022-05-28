@@ -3,6 +3,7 @@
     padding-top: 1em;
     padding-bottom: 6em;
     font-family: sans-serif;
+    text-transform: capitalize;
 }
 
 .contact-width {
@@ -18,9 +19,19 @@
     width: 50%;
 }
 
+.contact-text p {
+    color: #232c37;
+}
+
 .contact-text h3{
     margin-bottom: 0;
     color: cadetblue;
+}
+
+.contact-text h5 {
+    margin-top: .5em;
+    margin-bottom: 2em;
+    color: #1e54a5;
 }
 
 .contact-text h1 {
@@ -35,6 +46,7 @@
     text-align: center;
 }
 
+
 #txt-email-add h3 {
     font-size: 1.5rem;
     font-weight: 300;
@@ -44,7 +56,8 @@
 }
 
 #txt-email-add span {
-    color: green;
+    color: #0d6efd;
+    text-transform: none;
 }
 
 .contact-btn {

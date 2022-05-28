@@ -1,5 +1,5 @@
 import React from "react";
-import './MyPortfolio.css';
+import "./MyPortfolio.css";
 
 const MyPortfolio = () => {
   return (
@@ -8,11 +8,16 @@ const MyPortfolio = () => {
         <div className="contact-text">
           <h3>Hello, I'm</h3>
           <h1>Israt Zahan</h1>
+          <h5>
+            I am a Dentist and a passionate Python Programmer and front-end web
+            developer.
+          </h5>
           <p>
-            <small>
-              Display unlimited number of your products, contact new business
-              clients directly and get better prices for your products.
-            </small>
+            I have completed my graduation from Dhaka dental college and
+            hospital. I am an intermediate-level Python programmer and worked
+            with Pandas, NumPy, and Tkinter. As a beginner front-end developer I
+            have worked with HtMl5, css3, Bootstrap, Tailwind CSS, Es6, React,
+            ReactRouter, API, node js, and MongoDB.
           </p>
         </div>
         <div className="contact-img-container">
@@ -34,34 +39,31 @@ const MyPortfolio = () => {
         </div>
         <div className="contact-text" id="txt-email-add">
           <div>
-            <h3>
-              Let us do the work for you. Meet organic food <br /> suppliers and
-              buyers, Conclude deals on the spot!
-            </h3>
             <p>
               <small>E-mail address:</small>
             </p>
             <h2>
-              <span>contact@organic.zone</span>
+              <span className="mail-span">isratzahan.official@gmail.com</span>
             </h2>
           </div>
           <div>
+            <h5>My Project Links:</h5>
             <p>
               <small>
-                Warehouse:
-                <span> 1008 Fording Island Rd, Bluffton, South Carolina</span>
+                1.
+                <a href="https://organic-zone-36825.web.app/">Organic Zone</a>
               </small>
             </p>
             <p>
               <small>
-                Address:
-                <span> 116 S Main St, Summerville</span>
+                2.
+                <a href="https://heartfelt-malabi-3e6cef.netlify.app/">Creative Dentistry</a>
               </small>
             </p>
             <p>
               <small>
-                Office:
-                <span> 2995 Reidville Rd 150, Spartanburg</span>
+                3.
+                <a href="https://musical-sunburst-aac6c2.netlify.app/">Trusty Tech</a>
               </small>
             </p>
           </div>

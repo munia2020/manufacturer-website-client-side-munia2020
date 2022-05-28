@@ -1,4 +1,37 @@
-# Getting Started with Create React App
+# Safety Tools
+
+# [Live Demo]()
+
+
+
+# About Project
+* This is a simple Tools Manufacturer website made with React js, React Bootstrap and vanilla css.
+* Backend provided by Express.js.
+* Data stored in MongoDB.
+* Authentication has done with Firebase.
+* Implemented Email-password based authentication and sign in with Google.
+* React Router and React Hook Form have been implemented in this site.
+* Short Blogs are added about Nodejs, MongoDb and  JWT.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +100,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
